@@ -134,7 +134,6 @@ const Popup = () => {
         setEmails('');
         dispatch(setPopup(!popup));
         createdProjectsApi(requestBody);
-        // projectsApi();
       }
     }
   };

@@ -14,7 +14,6 @@ import Modal from '../../shared/Modal';
 import styles from './styles';
 import {setOwner} from '../../store/actions';
 import Icon from '../../shared/Icon';
-// import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
 const ProfileData = () => {
   const routes = useRoute();
@@ -24,7 +23,6 @@ const ProfileData = () => {
   const [name, setName] = useState(owner.name);
   const [email, setEmail] = useState(owner.email);
   const [password, setPassword] = useState(owner.password);
-  const [successMsg, setSuccessMsg] = useState(false);
   const [openPictureSettings, setOpenPictureSettings] = useState(false);
   const dispatch = useDispatch();
 
@@ -87,33 +85,12 @@ const ProfileData = () => {
     };
     console.log(newUSerDetails);
     dispatch(setOwner(newUSerDetails));
-    setSuccessMsg(true);
-    //   setTimeout(() => {
-    //     setSuccessMsg(false);
-    //   }, 2000);
   };
 
   return (
     <>
       {console.log('owner', owner)}
       <Modal screenName={screenName} />
-      {successMsg && (
-        <View
-          style={{
-            backgroundColor: 'green',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: 50,
-            width: '50%',
-            borderRadius: 100,
-            borderWidth: 1,
-            position: 'absolute',
-            top: 60,
-            right: 10,
-          }}>
-          <Text style={{color: 'white'}}>Updated Successfully</Text>
-        </View>
-      )}
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View
           style={{
