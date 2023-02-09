@@ -7,17 +7,17 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {AppRegistry} from 'react-native';
 import {Provider} from 'react-redux';
 import {name as appName} from './app.json';
-import Login from './src/components/Login/index';
-import DeleteFiles from './src/components/MultiComponents/DeletedFiles';
-import Favorites from './src/components/MultiComponents/Favorites';
-import Home from './src/components/MultiComponents/Home';
-import Recent from './src/components/MultiComponents/Recents';
-import Shared from './src/components/MultiComponents/Shared';
-import store from './src/components/Redux/store';
-import {persistor} from './src/components/Redux/store';
-import CreatedProjects from './src/components/MultiComponents/CreatedProjects';
+import Login from './src/screens/Login/index';
+import DeleteFiles from './src/screens/DeletedFiles';
+import Favorites from './src/screens/Favorites';
+import Home from './src/screens/Home';
+import Recent from './src/screens/Recents';
+import Shared from './src/screens/Shared';
+import store from './src/store/store';
+import {persistor} from './src/store/store';
+import CreatedProjects from './src/screens/CreatedProjects';
 import {PersistGate} from 'redux-persist/integration/react';
-import ProfileData from './src/components/MultiComponents/Profile';
+import ProfileData from './src/screens/Profile';
 
 const Stack = createStackNavigator();
 

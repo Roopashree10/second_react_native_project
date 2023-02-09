@@ -10,10 +10,10 @@ import {
 import {useDispatch, useSelector} from 'react-redux';
 import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
-import Modal from '../../Modal';
+import Modal from '../../shared/Modal';
 import styles from './styles';
-import {setOwner} from '../../Redux/actions';
-import Icon from '../../IcoMoon';
+import {setOwner} from '../../store/actions';
+import Icon from '../../shared/Icon';
 // import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
 const ProfileData = () => {

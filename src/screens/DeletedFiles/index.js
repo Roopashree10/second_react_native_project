@@ -2,8 +2,8 @@ import {useRoute} from '@react-navigation/native';
 import React from 'react';
 
 import {useSelector} from 'react-redux';
-import Listdata from '../../CommonComponent';
-import Modal from '../../Modal';
+import Listdata from '../../../';
+import Modal from '../../shared/Modal';
 
 const DeleteFiles = () => {
   const deleted = useSelector(state => state.isDeleted);

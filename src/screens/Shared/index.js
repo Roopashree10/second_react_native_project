@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import Modal from '../../Modal';
+import Modal from '../../shared/Modal';
 import {useRoute} from '@react-navigation/native';
-import Listdata from '../../CommonComponent';
-import {sharedApi} from '../../../Services/Api';
+import Listdata from '../../shared/ListData';
+import {sharedApi} from '../../services/api';
 
 const Shared = () => {
   const [data, setData] = useState();

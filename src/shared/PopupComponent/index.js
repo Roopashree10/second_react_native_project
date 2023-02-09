@@ -9,11 +9,11 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import Icon from '../../IcoMoon';
+import Icon from '../Icon';
 import style from './styles';
-import {setPopup, setProjectApi, setUser} from '../../Redux/actions';
+import {setPopup, setProjectApi, setUser} from '../../store/actions';
 import {useDispatch, useSelector} from 'react-redux';
-import {createdProjectsApi, projectsApi} from '../../../Services/Api';
+import {createdProjectsApi} from '../../services/api';
 const Popup = () => {
   const [project, setProject] = useState('');
   const [emails, setEmails] = useState('');

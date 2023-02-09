@@ -1,17 +1,11 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
-import {
-  Image,
-  ImageBackground,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
 import ReactNativeModal from 'react-native-modal';
 import {useDispatch, useSelector} from 'react-redux';
-import Icon from '../IcoMoon';
+import Icon from '../Icon';
 // import image from '../Images';
-import {setPopup, setTitle} from '../Redux/actions';
+import {setPopup, setTitle} from '../../store/actions';
 import styles from './styles';
 
 const Modal = props => {

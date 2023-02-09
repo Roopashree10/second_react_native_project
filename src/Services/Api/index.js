@@ -1,12 +1,8 @@
-import {Constants} from '../../components/Constants';
-import {privateApi, publicApi} from '../../components/Interceptors';
-import store from '../../components/Redux/store';
-import {
-  SetData,
-  setOwner,
-  setToken,
-  setUser,
-} from '../../components/Redux/actions';
+import {Constants} from '../../common/Constants';
+import {privateApi} from '../interceptors';
+import {publicApi} from '../interceptors';
+import store from '../../store/store';
+import {SetData, setOwner, setToken, setUser} from '../../store/actions';
 const loginUrl = Constants.LOGIN;
 const projectsUrl = Constants.MYPROJECTS;
 const sharedUrl = Constants.SHARED;

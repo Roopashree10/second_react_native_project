@@ -6,8 +6,6 @@ import {
   TextInput,
   Image,
   Text,
-  TouchableWithoutFeedback,
-  Keyboard,
 } from 'react-native';
 import {
   AddDeleted,
@@ -21,14 +19,13 @@ import {
   setRestoreRecent,
   setRestoreShared,
   setShared,
-} from '../Redux/actions';
-import {useDispatch, useSelector} from 'react-redux';
+} from '../../store/actions';
 import styles from './styles';
-import Popup from './PopupComponent';
+import {useDispatch, useSelector} from 'react-redux';
+import Popup from '../PopupComponent';
 
 const Listdata = props => {
   const data = props.data;
-
   const [showactions, setShowActions] = useState(false);
   const [showpopupoption, setShowPopupOption] = useState(false);
   const [id, setId] = useState();

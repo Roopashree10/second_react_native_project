@@ -8,10 +8,8 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import Icon from '../IcoMoon';
-import {loginApi} from '../../Services/Api';
-import {setToken} from '../Redux/actions';
-import {useDispatch} from 'react-redux';
+import Icon from '../../shared/Icon';
+import {loginApi} from '../../services/api';
 import {useNavigation} from '@react-navigation/native';
 
 const Login = ({}) => {

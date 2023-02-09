@@ -1,8 +1,8 @@
-import {useRoute} from '@react-navigation/native';
 import React from 'react';
 import {useSelector} from 'react-redux';
-import Listdata from '../../CommonComponent';
-import Modal from '../../Modal';
+import Modal from '../../shared/Modal';
+import {useRoute} from '@react-navigation/native';
+import Listdata from '../../shared/ListData';
 
 const Favorites = () => {
   const favourites = useSelector(state => state.isFavorites);
@@ -85,6 +85,7 @@ const Favorites = () => {
     <>
       <Modal screenName={screenName} />
       <Listdata screenName={screenName} data={favourites} />
+      {/* <Listdata screenName={screenName} data={favourites} /> */}
       {/*
       <View style={styles.headers}>
         <View style={styles.title}>

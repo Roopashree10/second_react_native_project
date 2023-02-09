@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
-import Modal from '../../Modal';
+import Modal from '../../shared/Modal';
 import {useRoute} from '@react-navigation/native';
-import Listdata from '../../CommonComponent';
-import {projectsApi} from '../../../Services/Api';
-import {SetData} from '../../Redux/actions';
+import {projectsApi} from '../../services/api';
+import Listdata from '../../shared/ListData';
 
 const Home = () => {
   const routes = useRoute();

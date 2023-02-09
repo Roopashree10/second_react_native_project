@@ -1,5 +1,5 @@
 import axios from 'axios';
-import store from '../Redux/store';
+import store from '../../store/store';
 
 export const privateApi = axios.create({
   baseURL: 'https://vxk5y6ogyb.execute-api.us-east-1.amazonaws.com/dev/',
